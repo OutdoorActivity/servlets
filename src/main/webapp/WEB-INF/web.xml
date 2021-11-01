@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>GreetingsServletName</servlet-name>
+        <servlet-class>ru.gorbachyov.servlet_demo.servlets.GreetingsServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>GreetingsServletName</servlet-name>
+        <url-pattern>/greet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JsonServletName</servlet-name>
+        <servlet-class>ru.gorbachyov.servlet_demo.servlets.JsonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>JsonServletName</servlet-name>
+        <url-pattern>/json</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CRUDFilesServeltName</servlet-name>
+        <servlet-class>ru.gorbachyov.servlet_demo.servlets.CRUDFilesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CRUDFilesServeltName</servlet-name>
+        <url-pattern>/crud</url-pattern>
+    </servlet-mapping>
+</web-app>
